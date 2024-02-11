@@ -15,10 +15,12 @@
   width: 50%;
   background: red;
   transition: all 3s ease-in 0.3s;
+  animation: slidy-boy 1.5s ease-in forwards infinite alternate;
 }
 
 .parent:hover .child {
-  animation: slidy-boy 1.5s ease-in both;
+  /* animation: slidy-boy 1.5s ease-in forwards infinite alternate; */
+  animation-play-state: paused;
 }
 
 @keyframes slidy-boy {
