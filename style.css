@@ -14,9 +14,26 @@
   height: 50%;
   width: 50%;
   background: red;
-  transition: transform 1s;
+  transition: all 3s ease-in 0.3s;
 }
 
 .parent:hover .child {
-  transform: translateX(100%);
+  animation: slidy-boy 1.5s ease-in both;
+}
+
+@keyframes slidy-boy {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(100%) translateY(100%);
+  }
+  75% {
+    transform: translateY(100%);
+  }
+  100% {
+  }
 }
